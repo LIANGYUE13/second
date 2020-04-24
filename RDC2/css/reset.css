@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, div, span, object, iframe,
+h1, p,
+abbr, address, cite, code,
+del, dfn, em, img,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-size: 15px;
+    color: #1a1a1a;
+    background: #f6f6f6;
+    vertical-align: baseline;
+    background:transparent;
+    box-sizing:border-box;
+}
+body {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+button ,input {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.Input{
+    cursor: auto;
+}
+
+input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #8590a6;
+    height: 48px;
+    line-height: 24px;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}

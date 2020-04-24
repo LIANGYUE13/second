@@ -1,0 +1,386 @@
+body{
+    height: 100%;
+    width: 100%;
+    >#root{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-image: url(../img/signin/sign_bg.png);
+        background-repeat: no-repeat;
+        background-color: #b8e5f8;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        >.content{
+            flex: 1 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+            min-height: 688px;
+            height: calc(100% - 42px);
+            box-sizing: border-box;
+            >img{
+                width: 128px;
+                height: 81px;
+                margin-bottom: 24px;
+            }
+            >.form-content{
+                background-color: white;
+                >form{
+                    padding: 0 24px 84px;
+                    position: relative;
+                    >.tab{
+                        text-align: left;
+                        >.tab-list{
+                            >li{
+                                display: inline-block;
+                                color: #444;
+                                font-size: 16px;
+                                line-height: 60px;
+                                height: 60px;
+                                margin-right: 24px;
+                                cursor: pointer;
+                                &.current{
+                                    position: relative;
+                                    color: #1a1a1a;
+                                    font-weight: 600;
+                                    &:after {
+                                        display: block;
+                                        position: absolute;
+                                        bottom: 0;
+                                        content: "";
+                                        width: 100%;
+                                        height: 3px;
+                                        background-color: #0084ff;
+                                    }
+                                }
+                            }
+                        }
+                        >.tab-cont{
+                            >.tips{
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                padding: 12px 24px;
+                                >div{
+                                    border-bottom: 1px solid #EBEBEB;
+                                    color: grey;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    height: 50px;
+                                    text-align: left;
+                                    >a{
+                                        color: grey;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            .option{
+                                margin-top: 12px;
+                                display: flex;
+                                justify-content: space-between;
+                                background: #fff;
+                                position: relative;
+                                >button.other{
+                                    color: #175199;
+                                    &:hover{
+                                        color: #8590a6;
+
+                                    }
+                                }
+                                >button:last-child{
+                                    position: absolute;
+                                    top: 12px;
+                                    right: 0;
+                                    padding: 4px 0;
+                                    transform: translateY(-50%);
+                                    float: right;
+                                    color: #8590a6;
+                                    &:hover{
+                                        color: gray;
+                                    }
+                                }
+                            }
+                            >.item.current{
+                                .account {
+                                    margin-top: 24px;
+                                    border-bottom: 1px solid #ebebeb;
+                                    display: flex;
+                                    align-items: center;
+                                    >.country{
+                                        display: inline-block;
+                                        min-width: 72px;
+                                        position: relative;
+                                        >button{
+                                            padding: 0;
+                                            border: 1px solid transparent;
+                                            text-align: left;
+                                            padding-right: 4px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-size: 14px;
+                                            line-height: 32px;
+                                            color: #8590a6;
+                                            >.arrow{
+                                                margin-left: 8px;
+
+                                            }
+                                        }
+                                    }
+                                    >span{
+                                        width: 1px;
+                                        height: 22px;
+                                        margin: 0 12px;
+                                        background: #ebebeb;
+                                    }
+                                }
+                                >.Input-cont{
+                                    border-bottom: 1px solid #ebebeb;
+                                    margin-top: 12px;
+                                }
+                                .Input-cont{
+                                    flex: 1 1;
+                                    overflow: hidden;
+                                    position: relative;
+                                    font-size: 14px;
+                                    height: 48px;
+                                    >label{
+                                        width: 100%;
+                                        height: 48px;
+                                        padding: 0;
+                                        color: #8590a6;
+                                        border-radius: 0;
+                                        >input{
+                                            height: 48px;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                    >button{
+                                        position: absolute;
+                                        top: 24px;
+                                        right: 0;
+                                        padding: 4px 0;
+                                        color: #175199;
+                                        transform: translateY(-50%);
+                                        &:hover{
+                                            color: #8590a6;
+                                        }
+                                    }
+                                }
+                                >button{
+                                    color: #fff;
+                                    background-color: #0084ff;
+                                    width: 100%;
+                                    margin-top: 50px;
+                                    margin-bottom: 10px;
+                                    height: 36px;
+                                    border: 1px solid #0084ff;
+                                    border-radius: 3px;
+                                    &:hover{
+                                        border-color: #0077e6;
+                                        background-color: #0077e6;
+                                    }
+                                }
+                            }
+                            >.item.last{
+                                display: none;
+                                margin-top: 25px;
+                                >.Input-cont{
+                                    border-bottom: 1px solid #ebebeb;
+                                    flex: 1 1;
+                                    overflow: hidden;
+                                    margin-top: 15px;
+                                    position: relative;
+                                    font-size: 14px;
+                                    height: 48px;
+                                    >label{
+                                        width: 100%;
+                                        height: 48px;
+                                        padding: 0;
+                                        color: #8590a6;
+                                        border-radius: 0;
+                                        >input{
+                                            height: 48px;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                    >button{
+                                        position: absolute;
+                                        top: 24px;
+                                        right: 0;
+                                        padding: 4px 0;
+                                        color: #175199;
+                                        transform: translateY(-50%);
+                                        &.password{
+                                            color: #8590a6;
+                                        }
+                                        &:hover:not(.password-eye){
+                                        color: #8590a6;
+                                        }
+                                    }
+                                }
+                                >button{
+                                    color: #fff;
+                                    background-color: #0084ff;
+                                    width: 100%;
+                                    margin-top: 28px;
+                                    margin-bottom: 10px;
+                                    height: 36px;
+                                    border: 1px solid #0084ff;
+                                    border-radius: 3px;
+                                    &:hover{
+                                        border-color: #0077e6;
+                                        background-color: #0077e6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                >.socialLogin{
+                    display: flex;
+                    justify-content: space-between;
+                    color: #8590a6;
+                    height: 60px;
+                    line-height: 60px;
+                    padding: 0 24px;
+                    box-sizing: border-box;
+                    >span{
+                        color: #8590a6;
+                        height: 60px;
+                        line-height: 60px;
+                        &.socialButtonGroup{
+                            display: flex;
+                            margin-left: 2px;
+                            >button{
+                                display: inline-flex;
+                                align-items: center;
+                                color: #8590a6;
+                                &:not(:first-child) {
+                                    margin-left: 22px;
+                                }
+                                >svg{
+                                    margin-right: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+                >.other{
+                    box-sizing: border-box;
+                    margin: 0;
+                    min-width: 0;
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    color: #0084FF;
+                    width: 400px;
+                    height: 60px;
+                    align-items: center;
+                    background-color: #F6F6F6;
+                    display: flex;
+                    justify-content: space-between;
+                    >span{
+                        width: 1px;
+                        height: 22px;
+                        margin: 0 12px;
+                        background: #ebebeb;
+                    }
+                    >div>button,>div>a{
+                        color: #0084FF;
+                    }
+                }
+            }
+        }
+        >footer{
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 1px 2px #999;
+            padding-bottom: 20px;
+            >div{
+                >a,span{
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 21px;
+                    >img{
+                        position: relative;
+                        top: 4px;
+                        margin-right: 2px;
+                    }
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+                >a:not(:last-child):after,>span:not(:last-child):after{
+                    content: " \B7 ";
+                    white-space: pre;
+                    display: inline-block;
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 21px;
+                }
+            }
+        }
+        >.cornerButtons {
+            position: fixed;
+            bottom: 12px;
+            right: 12px;
+            display: flex;
+            flex-direction: column;
+            transition: transform .1s ease-in-out;
+            will-change: transfrom;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >button{
+                width: 40px;
+                height: 40px;
+                background: #fff;
+                border-radius: 4px;
+                color: #8590a6;
+                box-shadow: 0 1px 3px rgba(26,26,26,.1);
+                &:hover{
+                    background: #d3d3d3;
+                    color: #76839b;
+                }
+                &:hover +.FBcont{
+                    opacity: 1;
+                }
+            }
+            >.FBcont{
+                opacity: 0;
+                transition: opacity .3s linear;
+                font-size: 13px;
+                color: white;
+                background-color: rgba(26,26,26,.7);
+                position: absolute;
+                right: 50px;
+                top: 5px;
+                width: 80px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 4px;
+                text-align: center;
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border: 7px solid transparent;
+                    border-right: none;
+                    border-left-color: rgba(26,26,26,.7);
+                    position: absolute;
+                    top: 8px;
+                    right: -7px;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
